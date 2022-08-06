@@ -8,7 +8,6 @@ router.get("/dashboard", function (req, res) {
   if (userid == "1234" && password == "1234") {
     res.render("dashboard");
   } else {
-    req.flash("info", "Flash is back!");
     res.render("login");
   }
 });
