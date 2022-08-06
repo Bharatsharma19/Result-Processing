@@ -211,10 +211,12 @@ router.get("/dashboard/result", function (req, res) {
     grade = "Invalid";
   }
 
+  /*
   if (grade === "A" || grade === "B") {
     alert(`Congratulation, You Scored ${per} %`);
   }
-
+  */
+ 
   /*
     var fnl =
       "<table bgcolor='#dcdde1' border='1' cellspacing='1' cellpadding='16' width='64%' ><caption></caption>";
