@@ -30,9 +30,10 @@
               <form action="/admin/dashboard" style="width: 23rem">
                 <div class="form-outline mb-4">
                   <input
-                    type="email"
+                    type="text"
                     id="form2Example18"
                     class="form-control form-control-lg"
+                    name="userid"
                   />
                   <label class="form-label" for="form2Example18">User Id</label>
                 </div>
@@ -42,6 +43,7 @@
                     type="password"
                     id="form2Example28"
                     class="form-control form-control-lg"
+                    name="password"
                   />
                   <label class="form-label" for="form2Example28"
                     >Password</label
@@ -49,9 +51,12 @@
                 </div>
 
                 <div class="pt-1 mb-4">
-                  <button class="btn btn-info btn-lg btn-block" type="button">
-                    Sign In
-                  </button>
+                  <input
+                    class="btn btn-info btn-lg btn-block"
+                    type="submit"
+                    name="submit"
+                    value="Sign In"
+                  />
                 </div>
               </form>
             </div>
