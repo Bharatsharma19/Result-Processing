@@ -1,8 +1,6 @@
 let express = require("express");
 let router = express.Router();
 
-
-
 router.get("/dashboard", function (req, res) {
   let userid = req.query.userid,
     password = req.query.password;
