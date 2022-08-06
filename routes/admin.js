@@ -8,7 +8,9 @@ router.get("/dashboard", function (req, res) {
   if (userid == "1234" && password == "1234") {
     res.render("dashboard");
   } else {
-    res.render("login", { status: true });
+    res.render("login", {
+      status: true,
+    });
   }
 });
 
@@ -213,38 +215,40 @@ router.get("/dashboard/result", function (req, res) {
     alert(`Congratulation, You Scored ${per} %`);
   }
 
-  var fnl =
-    "<table bgcolor='#dcdde1' border='1' cellspacing='1' cellpadding='16' width='64%' ><caption></caption>";
-  fnl +=
-    "<tr><th><font size='6' color='blue'>Central Board of Secondary Education</font></th></tr>";
-  fnl += `<tr><th><img src='cbse.png' alt='CBSE LOGO' width='16%'></th></tr>`;
-  fnl += `<tr><td><b>Roll No.</b> : ${roll}<br><b>Name : </b>${name} ${slt} Shri ${fn}<br><b>Gender : </b>${gen}<br><b>School Name : </b>${sn}</td></tr></table>`;
-  fnl +=
-    "<table bgcolor='aliceblue' border='1' cellspacing='1' cellpadding='16' width='64%'>";
-  fnl += `<tr><th>Subject</th><th>Minimum Marks</th><th>Maximum Marks</th><th>Obtained Marks</th><th>Grade</th></tr>`;
-  fnl += `<tr>
-      <td><b>Physics</b><br>
-      <b>Chemistry</b><br>
-      <b>Mathematics</b><br>
-      <b>Hindi</b><br>
-      <b>English</b><br>
-      </td>
-      <td>33<br>33<br>33<br>33<br>33</td>
-      <td>100<br>100<br>100<br>100<br>100</td>
-      <td>${sub1}<br>${sub2}<br>${sub3}<br>${sub4}<br>${sub5}</td>
-      <td>${prem}<br>${crem}<br>${mrem}<br>${hrem}<br>${erem}</td>
-    </tr></table>`;
-  fnl += `<table bgcolor='#81ecec' border='1' cellspacing='1' cellpadding='24' width='64%'>
-  <center>
-      <td>
-      <b>Total Marks : 500<br>
-      Obtained Marks : ${total}/500</b><br>
-      <b>Grade : ${grade}</b><br>
-      <b>Percentage : ${per} %</b><br>
-      <b>Remark : ${compartment}</b>
-      </td></center></table>`;
+  /*
+    var fnl =
+      "<table bgcolor='#dcdde1' border='1' cellspacing='1' cellpadding='16' width='64%' ><caption></caption>";
+    fnl +=
+      "<tr><th><font size='6' color='blue'>Central Board of Secondary Education</font></th></tr>";
+    fnl += `<tr><th><img src='cbse.png' alt='CBSE LOGO' width='16%'></th></tr>`;
+    fnl += `<tr><td><b>Roll No.</b> : ${roll}<br><b>Name : </b>${name} ${slt} Shri ${fn}<br><b>Gender : </b>${gen}<br><b>School Name : </b>${sn}</td></tr></table>`;
+    fnl +=
+      "<table bgcolor='aliceblue' border='1' cellspacing='1' cellpadding='16' width='64%'>";
+    fnl += `<tr><th>Subject</th><th>Minimum Marks</th><th>Maximum Marks</th><th>Obtained Marks</th><th>Grade</th></tr>`;
+    fnl += `<tr>
+        <td><b>Physics</b><br>
+        <b>Chemistry</b><br>
+        <b>Mathematics</b><br>
+        <b>Hindi</b><br>
+        <b>English</b><br>
+        </td>
+        <td>33<br>33<br>33<br>33<br>33</td>
+        <td>100<br>100<br>100<br>100<br>100</td>
+        <td>${sub1}<br>${sub2}<br>${sub3}<br>${sub4}<br>${sub5}</td>
+        <td>${prem}<br>${crem}<br>${mrem}<br>${hrem}<br>${erem}</td>
+      </tr></table>`;
+    fnl += `<table bgcolor='#81ecec' border='1' cellspacing='1' cellpadding='24' width='64%'>
+    <center>
+        <td>
+        <b>Total Marks : 500<br>
+        Obtained Marks : ${total}/500</b><br>
+        <b>Grade : ${grade}</b><br>
+        <b>Percentage : ${per} %</b><br>
+        <b>Remark : ${compartment}</b>
+        </td></center></table>`;
 
-  console.log(fnl);
+    console.log(fnl);
+    */
 
   res.render("result", {
     rollno: roll,
