@@ -8,7 +8,7 @@ router.get("/dashboard", function (req, res) {
   if (userid == "1234" && password == "1234") {
     res.render("dashboard");
   } else {
-    res.render("login");
+    res.render("login", { status: true });
   }
 });
 
