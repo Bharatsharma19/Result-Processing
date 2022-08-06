@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result</title>
-    <link rel="icon" href="/public/images/favicon.ico">
+    <link rel="icon" href="/public/images/favicon.ico" />
   </head>
   <body>
     <center>
@@ -25,14 +25,20 @@
           </th>
         </tr>
         <tr>
-          <th><img src="https://upload.wikimedia.org/wikipedia/en/9/95/CBSE_new_logo.svg" alt="CBSE LOGO" width="12%" /></th>
+          <th>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/9/95/CBSE_new_logo.svg"
+              alt="CBSE LOGO"
+              width="12%"
+            />
+          </th>
         </tr>
         <tr>
           <td>
-            <b>Roll No.</b> : <%= rollno %><br /><b>Name : </b><%= name %> <%=
-            slt %> Shri <%= fn %><br /><b>Gender : </b><%= gen %><br /><b
-              >School Name : </b
-            ><%= sn %>
+            <b>Roll No.</b> : <%= rollno %><br />
+            <b>Name : </b><%= name %> <%= slt %> Shri <%= fn %><br />
+            <b>Gender : </b><%= gen %><br />
+            <b>School Name : </b><%= sn %>
           </td>
         </tr>
       </table>
@@ -58,15 +64,33 @@
             <b>Hindi</b><br />
             <b>English</b><br />
           </td>
-          <td>33<br />33<br />33<br />33<br />33</td>
-          <td>100<br />100<br />100<br />100<br />100</td>
           <td>
-            <%= sub1 %><br /><%= sub2 %><br /><%= sub3 %><br /><%= sub4 %><br /><%=
-            sub5 %>
+            33<br />
+            33<br />
+            33<br />
+            33<br />
+            33
           </td>
           <td>
-            <%= prem %><br /><%= crem %><br /><%= mrem %><br /><%= hrem %><br /><%=
-            erem %>
+            100<br />
+            100<br />
+            100<br />
+            100<br />
+            100
+          </td>
+          <td>
+            <%= sub1 %><br />
+            <%= sub2 %><br />
+            <%= sub3 %><br />
+            <%= sub4 %><br />
+            <%= sub5 %>
+          </td>
+          <td>
+            <%= prem %><br />
+            <%= crem %><br />
+            <%= mrem %><br />
+            <%= hrem %><br />
+            <%= erem %>
           </td>
         </tr>
       </table>
@@ -79,10 +103,11 @@
       >
         <center>
           <td>
-            <b
-              >Total Marks : 500<br />
-              Obtained Marks : <%= total %>/500</b
-            ><br />
+            <b>
+              Total Marks : 500<br />
+              Obtained Marks : <%= total %>/500
+            </b>
+            <br />
             <b>Grade : <%= grade %></b><br />
             <b>Percentage : <%= per %> %</b><br />
             <b>Remark : <%= compartment %></b>
