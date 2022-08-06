@@ -15,25 +15,25 @@
                     <tr>
                         <td><b class="ml-1 px-2">Roll Number</b></td>
                         <td>
-                            <input type="number" placeholder="Your Roll Number" id="rollno" />
+                            <input type="number" placeholder="Your Roll Number" name="rollno" required />
                         </td>
                     </tr>
                     <tr>
                         <td><b class="ml-1 px-2">Student's Name</b></td>
                         <td>
-                            <input type="text" placeholder="Name" id="name" maxlength="32" />
+                            <input type="text" placeholder="Name" name="name" maxlength="32" required />
                         </td>
                     </tr>
                     <tr>
                         <td><b class="ml-1 px-2">Father's Name</b></td>
                         <td>
-                            <input type="text" placeholder="Father's Name" id="fname" maxlength="32" />
+                            <input type="text" placeholder="Father's Name" name="fname" maxlength="32" required />
                         </td>
                     </tr>
                     <tr>
                         <td><b class="ml-1 px-2">School Name</b></td>
                         <td>
-                            <input type="text" placeholder="School's Name" id="sname" maxlength="64" />
+                            <input type="text" placeholder="School's Name" name="sname" maxlength="64" required />
                         </td>
                     </tr>
                     <tr>
@@ -43,21 +43,21 @@
                     <tr>
                         <td><b class="ml-1 px-2">Enter Marks of each subject</b></td>
                         <td>
-                            <b class="ml-1 px-2">Physics:</b><input type="number" id="pmarks" min="1" max="2" /> <b class="ml-1 px-2">Chemistry:</b><input type="number" id="cmarks" min="1" max="2" /> <b class="ml-1 px-2">Mathematics:</b>
-                            <input type="number" id="mmarks" min="1" max="2" /> <b class="ml-1 px-2">Hindi:</b><input type="number" id="hmarks" min="1" max="2" /> <b class="ml-1 px-2">English:</b>
-                            <input type="number" id="emarks" min="1" max="2" />
+                            <b class="ml-1 px-2">Physics:</b><input type="number" name="pmarks" min="1" max="2" required /> <b class="ml-1 px-2">Chemistry:</b><input type="number" name="cmarks" min="1" max="2" required />
+                            <b class="ml-1 px-2">Mathematics:</b> <input type="number" name="mmarks" min="1" max="2" required /> <b class="ml-1 px-2">Hindi:</b><input type="number" name="hmarks" min="1" max="2" required />
+                            <b class="ml-1 px-2">English:</b>
+                            <input type="number" name="emarks" min="1" max="2" required />
                         </td>
                     </tr>
                 </table>
+                <hr />
+                <input type="submit" class="btn btn-lg btn-block" value="Submit" name="submit" />
+                <br />
+                <br />
+                <b class="ml-1 px-2">End</b>
+                <br />
+                <hr />
             </form>
-
-            <hr />
-            <input type="button" value="Submit" />
-            <br />
-            <br />
-            <b class="ml-1 px-2">End</b>
-            <br />
-            <hr />
         </center>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
